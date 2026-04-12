@@ -1,0 +1,14 @@
+node_modules/
+.git/
+.git/objects/
+.git/logs/
+.wrangler/
+public/
+private/
+.env
+.env.*
+.dev.vars*
+*.log
+.DS_Store
+.gitignore
+package-lock.json

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy-bara Coloring Book</title>
+    <meta
+      name="description"
+      content="A colorful and delightful capybara-themed coloring book shop for kids."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Chewy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <!-- floating sparkles -->
+      <span class="sparkle s1" aria-hidden="true">✦</span>
+      <span class="sparkle s2" aria-hidden="true">★</span>
+      <span class="sparkle s3" aria-hidden="true">✦</span>
+      <span class="sparkle s4" aria-hidden="true">✶</span>
+      <span class="sparkle s5" aria-hidden="true">★</span>
+      <span class="sparkle s6" aria-hidden="true">✦</span>
+
+      <section class="hero">
+        <div class="hero-band">
+          <span class="hero-deco" aria-hidden="true">✦</span>
+          <div class="hero-text">
+            <h1>Happy-bara <span class="title-pop">Coloring Book</span></h1>
+            <p class="hero-sub">A coloring adventure for little artists &middot; by <strong>Victoria (Vivi) Jacobs</strong></p>
+          </div>
+          <span class="hero-deco" aria-hidden="true">✦</span>
+        </div>
+      </section>
+
+      <section class="shop" aria-label="Storefront">
+        <article class="product-card" id="product-card"></article>
+
+        <aside class="cart-card" id="cart-pane" aria-label="Checkout summary">
+          <button class="cart-close-btn" id="cart-close-btn" aria-label="Close basket">✕</button>
+          <h2>Your Basket</h2>
+          <div id="cart-summary"></div>
+          <button class="checkout-btn" id="checkout-btn" type="button">Checkout</button>
+          <p class="checkout-note">
+            Stripe test checkout enabled. No real charges are made in test mode.
+          </p>
+          <p class="error-message" id="checkout-error" role="alert" aria-live="polite"></p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Created with joy in Philadelphia, PA and Round Rock, TX</p>
+    </footer>
+
+    <script type="module" src="scripts/app.js"></script>
+  </body>
+</html>
