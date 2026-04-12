@@ -54,3 +54,4 @@ private/
 .wrangler/
 .dev.vars
 .dev.vars.*
+.deploy/
