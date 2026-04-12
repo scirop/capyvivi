@@ -4,9 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "wrangler pages dev .",
-    "build": "mkdir -p .deploy && cp -r index.html success.html cancel.html styles scripts assets .deploy/ && cp -r functions .deploy/",
-    "deploy": "npm run build && wrangler pages deploy .deploy",
-    "check": "echo 'No build step required for this static + functions project.'"
+    "deploy": "wrangler pages deploy ."
   },
   "devDependencies": {
     "wrangler": "^4.12.0"
