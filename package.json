@@ -1,0 +1,13 @@
+{
+  "name": "capyvivi",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "deploy": "wrangler pages deploy .",
+    "check": "echo 'No build step required for this static + functions project.'"
+  },
+  "devDependencies": {
+    "wrangler": "^4.12.0"
+  }
+}

@@ -1,0 +1,6 @@
+name = "capyvivi"
+compatibility_date = "2026-04-12"
+
+[vars]
+# Set in Cloudflare dashboard for production. Keep test key only for development.
+# STRIPE_SECRET_KEY = "sk_test_xxx"
