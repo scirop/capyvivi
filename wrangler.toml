@@ -1,15 +1,14 @@
 name = "capyvivi"
 compatibility_date = "2026-04-12"
-pages_build_output_dir = "."
 
-[build]
-command = "npm run check"
-watch_paths = ["styles/**", "scripts/**", "*.html"]
+[assets]
+directory = "."
+binding = "ASSETS"
 
 [env.production.vars]
 STRIPE_SECRET_KEY = ""
 
 [vars]
-# Set STRIPE_SECRET_KEY in Cloudflare dashboard for production.
-# Use `wrangler secret put STRIPE_SECRET_KEY` for local development.
+# Set STRIPE_SECRET_KEY in Cloudflare dashboard or via: wrangler secret put STRIPE_SECRET_KEY
+
 
