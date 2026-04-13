@@ -4,7 +4,7 @@ export const products = [
     name: "Happy-bara Coloring Book",
     description:
       "A joyful capybara coloring book packed with whimsical pages for kids and families.",
-    priceCents: 1999,
+    priceCents: 999,
     currency: "usd",
     image: "assets/capybara/1.png",
     details: [
