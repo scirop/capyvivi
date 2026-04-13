@@ -71,14 +71,20 @@ body.cart-open .page-shell {
 }
 
 .hero-text {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
 }
 
 .site-logo {
-  max-height: 120px;
-  width: auto;
-  display: block;
-  margin: 0 auto 0.25rem;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 16px;
+  clip-path: inset(0 round 16px);
+  flex-shrink: 0;
 }
 
 .hero-text h1 {
