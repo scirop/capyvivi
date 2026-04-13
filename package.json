@@ -5,7 +5,7 @@
   "scripts": {
     "build": "rm -rf dist && mkdir -p dist && cp *.html dist/ && cp -r styles scripts assets dist/",
     "dev": "wrangler pages dev .",
-    "deploy": "npm run build && wrangler pages deploy dist"
+    "deploy": "npm run build && wrangler deploy"
   },
   "devDependencies": {
     "wrangler": "^4.12.0"
