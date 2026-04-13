@@ -74,6 +74,13 @@ body.cart-open .page-shell {
   text-align: center;
 }
 
+.site-logo {
+  max-height: 120px;
+  width: auto;
+  display: block;
+  margin: 0 auto 0.25rem;
+}
+
 .hero-text h1 {
   margin: 0;
   font-family: "Chewy", cursive;
