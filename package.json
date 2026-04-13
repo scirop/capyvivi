@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && cp *.html dist/ && cp -r styles scripts assets dist/",
     "dev": "wrangler pages dev .",
-    "deploy": "wrangler pages deploy ."
+    "deploy": "npm run build && wrangler pages deploy dist"
   },
   "devDependencies": {
     "wrangler": "^4.12.0"

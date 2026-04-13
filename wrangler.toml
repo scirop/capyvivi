@@ -1,11 +1,6 @@
 name = "capyvivi"
 compatibility_date = "2026-04-12"
-
-[assets]
-directory = "."
-
-[env.production.vars]
-STRIPE_SECRET_KEY = ""
+pages_build_output_dir = "dist"
 
 [vars]
 # Set STRIPE_SECRET_KEY in Cloudflare dashboard or via: wrangler secret put STRIPE_SECRET_KEY
