@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist && mkdir -p dist && cp *.html dist/ && cp -r styles scripts assets dist/",
+    "build": "rm -rf dist && cp -r public dist",
     "dev": "wrangler pages dev .",
     "deploy": "npm run build && wrangler deploy"
   },
