@@ -5,4 +5,5 @@ pages_build_output_dir = "dist"
 [vars]
 # Set STRIPE_SECRET_KEY in Cloudflare dashboard or via: wrangler secret put STRIPE_SECRET_KEY
 
-
+[assets]
+directory = "./dist"
