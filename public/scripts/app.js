@@ -6,6 +6,8 @@ const cartSummary = document.getElementById("cart-summary");
 const checkoutButton = document.getElementById("checkout-btn");
 const checkoutError = document.getElementById("checkout-error");
 const cartCloseBtn = document.getElementById("cart-close-btn");
+const basketFab = document.getElementById("basket-fab");
+const basketBadge = document.getElementById("basket-badge");
 
 const [product] = products;
 const cart = new Cart(product.id);
@@ -24,6 +26,7 @@ function closeCart() {
 }
 
 cartCloseBtn.addEventListener("click", closeCart);
+basketFab.addEventListener("click", openCart);
 
 function renderProduct() {
   productCard.innerHTML = `
@@ -57,8 +60,15 @@ function renderProduct() {
   document.getElementById("add-to-basket-btn").addEventListener("click", () => {
     cart.setQuantity(quantityInput.value);
     renderSummary();
+    updateBadge(cart.getSnapshot().quantity);
     openCart();
   });
+}
+
+function updateBadge(quantity) {
+  basketBadge.textContent = String(quantity);
+  basketBadge.hidden = quantity === 0;
+  basketFab.classList.toggle("has-items", quantity > 0);
 }
 
 function renderSummary() {
