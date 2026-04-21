@@ -1,6 +1,6 @@
 const capy = document.getElementById("capy-walker");
 
-const SPEED = 5; // px per frame
+const SPEED = 3; // px per frame
 const GLITTER = ["✨", "💨", "⭐", "🌟", "💫", "🌈", "💥"];
 
 let x = window.innerWidth * 0.1;
